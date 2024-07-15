@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 import { GoArrowLeft } from "react-icons/go";
 
 
-export function SignOut(){
+export function SignUp(){
     return(
         <Container>
             <Form>
