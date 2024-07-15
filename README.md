@@ -1,8 +1,25 @@
-# React + Vite
+# Desafio Reactjs
+Criação do front-end da aplicação em React.js sobre um site de filmes. Desafio da formação explorer na Rocketseat
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Estrutura da aplicação
+Pasta src/:
+- components/: Contém os componentes reutilizáveis da aplicação.
+- pages: Cada página da aplicação tem seu próprio diretório aqui.
+- pages/home: Página inicial da aplicação com os filmes listados
+- pages/MoviePreview: detalhes do filme
+- pages/CreateMovie: adicionar um filme
+- Pages/Profile: Perfil do usuário
+- pages/SignIn: Página de login
+- pages/SignUp: Página de cadastro
+- styles/: Arquivos de estilos (CSS, SCSS, etc.).
+- App.js: Componente raiz da aplicação.
+- index.js: Ponto de entrada da aplicação.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Rotas
+- / = home
+- /details:id = MoviePreview
+- /create = CreateMovie
+- /profile = Profile
+## Rotas autenticadas
+- / = SignIn
+- /register = SignUp
