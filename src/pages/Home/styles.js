@@ -14,15 +14,13 @@ export const Container = styled.div`
         width: 1120px;
         display: flex;
         flex-direction: column;
-        overflow-y: auto;
+        overflow: hidden;
         
         >article{
             overflow-y: scroll;
             scrollbar-width: thin;
             scrollbar-color: #FF859B #1C1B1E;
-            ::-webkit-scrollbar-button{
-                color: green;
-            }
+            padding-right: 8px;
         }
 
         >header{

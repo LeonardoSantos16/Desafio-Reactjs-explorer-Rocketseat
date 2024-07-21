@@ -1,13 +1,23 @@
 import { Film, Container } from "./styles"
-export function Section({title, text, children}){
+import { Tags } from "../Tags"
+import { StarComponent } from "../stars"
+export function Section({ data, ...rest }){
     return(
-        <Container>
+        <Container {...rest}>
             <Film>
-                <h2>{ title }</h2>
-                <img src="../src/assets/stars.svg" alt="" />
+                <h2>{ data.title }</h2>
+                <StarComponent rating={data.rating}/>
+                
             </Film>
-            <p>{ text }</p>
-            { children }
+            <p>{ data.description }</p>
+            {
+                data.tags &&
+                <main>
+                    {
+                        data.tags.map(tag => <Tags key={tag.id} title={tag.name} />)
+                    }
+                </main>
+            }
         </Container>
     )
 }

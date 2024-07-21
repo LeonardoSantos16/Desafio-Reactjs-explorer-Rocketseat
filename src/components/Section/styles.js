@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const Container = styled.section`
     width: 100%;
     height: 222px;
@@ -11,6 +12,7 @@ export const Container = styled.section`
     flex-direction: column;
     gap: 15px;
     margin-bottom: 24px;
+    cursor: pointer;
     >p{
         font-weight: 400;
         font-size: 16px;
@@ -23,8 +25,12 @@ export const Container = styled.section`
         margin-bottom: 15px;
         color: ${({ theme }) => theme.COLORS.GRAY_TEXT};
     }
+    
 
 `
+
+
+
 export const Film = styled.header`
     display: flex;
     flex-direction: column;
@@ -36,9 +42,7 @@ export const Film = styled.header`
         line-height: 32px;
         color: ${({theme}) => theme.COLORS.WHITE};
     }
-    >img{
-        height: 12px;
-        width: 84px;
-        color: ${({ theme }) => theme.COLORS.PINK};
-    }
+    
 `
+
+    

@@ -7,7 +7,7 @@ export default createGlobalStyle`
         box-sizing: border-box;
         font-family: 'Roboto Slab', serif;
     }
-    body{
+    body, input, textarea{
         background-color: ${({theme}) => theme.COLORS.BACKGROUND};
         color: ${({ theme }) => theme.COLORS.WHITE};
         -webkit-font-smoothing: antialiased;   

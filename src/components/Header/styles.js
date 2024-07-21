@@ -9,14 +9,14 @@ export const Container = styled.header`
     border-bottom: 1px solid;
     border-bottom-color: ${({ theme }) => theme.COLORS.LINE};
 `   
-export const Profile = styled(Link)`
+export const Profile = styled.div`
     text-decoration: none;
     display: flex;
     width: 1120px;
     margin: 0 auto;
     align-items: center;
-    justify-content: center;
-    gap: 64px;
+    justify-content: space-between;
+ 
     padding: 30px 0;
   
     >h1{
@@ -32,7 +32,7 @@ export const Profile = styled(Link)`
         >.text{
             display: flex;
             flex-direction: column;
-            text-align: end;
+            align-items: end;
             justify-content: center;
             span{
                 font-size: 14px;
@@ -40,22 +40,27 @@ export const Profile = styled(Link)`
                 font-weight: 700;
                 color: ${({theme}) => theme.COLORS.WHITE};
             }
-            strong{    
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 18px;
-            color: ${({theme}) => theme.COLORS.GRAY};
+            button{
+                
             }
         }
         img{
             height: 64px;
             width: 64px;
             border-radius: 50%;
+            cursor: pointer;
         }
     }
-    
-
 `
-
+export const Logout = styled.button`
+    font-weight: 400;
+    font-size: 14px;
+    width: 30px;
+    line-height: 18px;
+    color: ${({theme}) => theme.COLORS.GRAY};
+    background: none;
+    text-align: end;
+    cursor: pointer;
+`
 
 

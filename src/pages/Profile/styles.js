@@ -54,7 +54,7 @@ export const Picture = styled.div`
         display: flex;
          align-items: center;
         justify-content: center;
-
+        cursor: pointer;
         position: absolute;
         bottom: 7px;
         right: 7px;

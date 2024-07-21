@@ -13,6 +13,12 @@ export const Container = styled.div`
         flex-direction: column;
         gap: 40px;
         width: 1120px;
+        overflow-y: scroll;
+        overflow: i;
+        scrollbar-width: thin;
+        scrollbar-color: #FF859B #1C1B1E;
+        padding-right: 8px;
+        
         
         >header{
             display: flex;

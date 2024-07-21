@@ -1,8 +1,11 @@
 import { Container } from "./styles";
 import { GoArrowLeft } from "react-icons/go";
-export function Back(){
+
+export function BackButton({...rest}){
+
     return(
-        <Container>
+        <Container  {...rest}>
+           
             <GoArrowLeft/>
             voltar
         </Container>
