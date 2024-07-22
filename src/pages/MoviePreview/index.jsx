@@ -9,6 +9,7 @@ import { api } from '../../services/api';
 import { StarComponent } from '../../components/stars';
 import { useAuth } from '../../hooks/auth';
 import { BackButton } from '../../components/BackButton';
+import avatarPlaceholder from '../../assets/avatar_placeholder.svg';
 export function MoviePreview(){
     const { user } = useAuth();
     const params = useParams();
