@@ -1,5 +1,5 @@
 import axios from "axios";
 
 export const api = axios.create({
-    baseURL: 'http://localhost:777'
+    baseURL: 'https://desafio-node-movie-rocketseat.onrender.com'
 })
